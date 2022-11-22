@@ -93,6 +93,27 @@
             margin-top: 0;
             margin-bottom: 36px;
         }
+        
+    .points {
+        display: flex;
+        justify-content: center;
+      }
+      .points > li {
+        background: var(--very--light-pink);
+        width: 8px;
+        height: 8px;
+        margin: 8px 6px;
+        border-radius: 50%;
+        list-style-type: none;
+        cursor: pointer;
+      }
+      .points > .active {
+        background: var(--hospital-green);
+      }
+      .points > li:hover {
+        background: var(--hospital-green);
+      }
+
         @media (max-width: 640px){
             .product-detail{
                 width: 100%;
@@ -107,6 +128,12 @@
         </div>
         <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="computer">
 
+        <div class="points">
+            <li class="active"></li>
+            <li ></li>
+            <li></li>
+          </div>
+          
         <div class="product-info">
             <p>$569</p>
             <p>Computer</p>
@@ -116,6 +143,8 @@
                 Add to card
             </button>
         </div>
+
+
     </aside>
     
 </body>
